@@ -2,7 +2,7 @@ Código do mapa mental:
 
 
 @startmindmap
-+[#ADD8E6] Projeto de Melhorias \n para Estacionamento
++[#ADD8E6] Sistema de Estacionamento
 --[#7FFF00] Stakeholders
 ---[#7FFF00] Motoristas
 ----[#7FFF00] Satisfação \n com Segurança
@@ -10,14 +10,14 @@ Código do mapa mental:
 ---[#7FFF00] Administrador
 ----[#7FFF00] Gestão \n de Recursos
 ----[#7FFF00] Maximização \n de Lucros
-++[#00FF7F] Descrição_do \n Sistema_Atual
-+++[#00FF7F] Entrada_e \n Saída
+++[#00FF7F] Descrição do \n Sistema Atual
++++[#00FF7F] Entrada e \n Saída
 ++++[#00FF7F] Ticket \n com QR Code
 +++++[#00FF7F] Controle \n do Horário
 +++++[#00FF7F] Pagamento \n para Saída
 ++++[#00FF7F] Cancelas \n Automáticas
 +++++[#00FF7F] Interface \n com o Ticket
-+++[#00FF7F] Áreas_de \n Estacionamento
++++[#00FF7F] Áreas de \n Estacionamento
 ++++[#00FF7F] Área \n Externa (Descoberta)
 +++++[#00FF7F] Estacionamento \n Padrão
 ++++[#00FF7F] Área \n Interna (Coberta)
@@ -25,7 +25,7 @@ Código do mapa mental:
 ++++++[#00FF7F] Indicadores \n Verde/Vermelho
 +++++[#00FF7F] Placas \n Digitais
 ++++++[#00FF7F] Direção \n de Vagas
---[#32CD32] Funções_das \n Equipes
+--[#32CD32] Funções das \n Equipes
 ---[#32CD32] Segurança
 ----[#32CD32] Monitoramento \n de Entradas
 ----[#32CD32] Relatórios \n e Alerta
@@ -44,15 +44,15 @@ Código do mapa mental:
 +++[#00CED1] Perguntas \n para Equipes
 ++++[#00CED1] Necessidade \n de Mudanças?
 ++++[#00CED1] Funcionalidades \n Esperadas?
---[#20B2AA] Pontos_Levantados \n nas Entrevistas
----[#20B2AA] Pagamento_por \n Aplicativo
-----[#20B2AA] Criação_de \n Créditos Pré-pagos
+--[#20B2AA] Pontos Levantados \n nas Entrevistas
+---[#20B2AA] Pagamento por \n Aplicativo
+----[#20B2AA] Criação de \n Créditos Pré-pagos
 ---[#20B2AA] Leitura \n de Placas
-----[#20B2AA] Entrada_e \n Saída Automatizadas
----[#20B2AA] Câmeras_com \n IA
+----[#20B2AA] Entrada e \n Saída Automatizadas
+---[#20B2AA] Câmeras com \n IA
 ----[#20B2AA] Monitoramento \n de Incidentes
 ----[#20B2AA] Notificação \n Automática
-++[#FFD700] Ideias_para \n o Sistema
+++[#FFD700] Ideias para \n o Sistema
 +++[#FFD700] Aplicativo \n para Celular
 ++++[#FFD700] Cadastro \n de Veículos
 ++++[#FFD700] Registro \n de Horário de Entrada
@@ -60,7 +60,7 @@ Código do mapa mental:
 +++++[#FFD700] PIX, Cartão, \n Crédito Pré-pago
 +++[#FFD700] Mapa \n de Vagas Livres
 ++++[#FFD700] Indicação \n em Tempo Real
---[#FF8C00] Requisitos_Não \n Funcionais
+--[#FF8C00] Requisitos Não \n Funcionais
 ---[#FF8C00] Câmeras \n com IA
 ----[#FF8C00] Detecção \n de Anomalias
 ---[#FF8C00] Sistema \n de Reserva de Vagas
