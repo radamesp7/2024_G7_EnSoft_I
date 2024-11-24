@@ -1,0 +1,76 @@
+@startuml
+class Estacionamento {
+    +id: int
+    +nome: String
+    +localizacao: String
+    ---
+    +gerenciarEntrada(motorista: Motorista)
+    +gerenciarSaida(ticket: Ticket)
+    +consultarVagas()
+}
+
+class Vaga {
+    +id: int
+    +status: String <<Livre ou Ocupada>>
+    +localizacao: String
+    ---
+    +atualizarStatus()
+}
+
+class Ticket {
+    +id: int
+    +horarioEntrada: DateTime
+    +horarioSaida: DateTime
+    +qrCode: String
+    ---
+    +emitir()
+    +calcularDuracao()
+}
+
+class Motorista {
+    +id: int
+    +nome: String
+    +veiculo: Veiculo
+    ---
+    +registrarEntrada(estacionamento: Estacionamento)
+    +efetuarPagamento(pagamento: Pagamento)
+}
+
+class Veiculo {
+    +placa: String
+    +modelo: String
+    ---
+    +cadastrar()
+}
+
+class Administrador {
+    +id: int
+    +nome: String
+    ---
+    +gerarRelatorio()
+    +gerenciarUsuarios()
+}
+
+class SistemaDeMonitoramento {
+    ---
+    +detectarComportamentoSuspeito()
+    +monitorarVagas()
+}
+
+class Pagamento {
+    +id: int
+    +valor: float
+    +metodo: String <<PIX, Cartão, Crédito>>
+    ---
+    +processar()
+}
+
+Estacionamento "1" o-- "*" Vaga : possui
+Estacionamento "1" o-- "*" Motorista : recebe
+Motorista "1" o-- "1" Veiculo : utiliza
+Motorista "1" o-- "1" Ticket : recebe
+Ticket "1" --> "1" Pagamento : gera
+Administrador "1" -- "*" Estacionamento : gerencia
+SistemaDeMonitoramento --> Vaga : monitora
+SistemaDeMonitoramento --> Estacionamento : supervisiona
+@enduml
